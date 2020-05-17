@@ -18,6 +18,3 @@ hello.style.color = "white";
 hello.className = "prac";
 hello.innerHTML = "연습입니다.";
 
-
-
-
