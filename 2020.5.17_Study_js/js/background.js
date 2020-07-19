@@ -97,6 +97,7 @@ function loadBackground(){
             getBackGround();
         }else{
             body.style.background=`url(${parsedImageObject.url})`;
+            body.style.backgroundSize = "100%";
             locationText.innerHTML = `${parsedImageObject.name}, ${parsedImageObject.city}, ${parsedImageObject.country}`
         }
         
