@@ -10,7 +10,7 @@ function drawName(name){
     //위에껏을 아에 지웠다 
     const drawName = document.createElement("span");
     drawName.className = "name_text";
-    drawName.innerHTML = `Hello ${name} !`;
+    drawName.innerHTML = `Hello ${name}!`;
     nameContainer.appendChild(drawName);
 }
 
