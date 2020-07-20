@@ -49,8 +49,9 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-left: 15%;
+    margin-left: 10%;
     width: 100%;
+    color: white;
 }
 
 .myName{
@@ -62,6 +63,8 @@ body{
     width: 170px;
 }
 .locaction{
-    margin-top: 770px;
+    margin-top: 420px;
     color: white;
+    margin-left: 70%;
+    position: absolute;
 }
