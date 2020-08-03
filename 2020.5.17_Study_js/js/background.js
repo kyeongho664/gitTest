@@ -10,6 +10,9 @@ const IMAGEURL = `https://api.unsplash.com/photos/random/?client_id=${API_KEY}&o
 //orientation=landscape이건 사이즈
 //query=coding 코딩에 관한 사진만 나온다.
 
+console.log(IMAGEURL);
+//imageurl주소로 들어가면 제이슨 객체(문자)로 반환이 된다. (이게 리스폰스) - 패치에서 response이렇게 해서 불러오는 이유
+
 function saveBackGround(url, city, country, name){
 
     //저장하기 전에 전에 있던거 지우고 저장한다.
@@ -52,6 +55,8 @@ fetch(IMAGEURL)
 //=>함수는 버젼이 올라가면서 생김 왼쪽것을 오른쪽에 담는용도
     .then(response => response.json())
     .then(json => {
+        //제시슨 화를 시켰기 때문에 그 주소로 들어가게 되면 사진이 나온다.
+        //console.log(json);
         const image = json;
         console.log(image);
             if(image.urls && image.urls.full && image.location.city && image.location.country &&  image.location.name){
